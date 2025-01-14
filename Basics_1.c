@@ -1,5 +1,3 @@
-
-
 //Including header files whose code will be added during the time of compilation
 #include <stdio.h>
 
