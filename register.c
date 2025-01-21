@@ -14,3 +14,4 @@ int main() {
     // then the RAM memory module
     
 }
+// Register -> Cache Memory -> Maim Memory (RAM) -> Secondary memory (HDDs and SSDs)
