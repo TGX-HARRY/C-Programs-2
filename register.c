@@ -12,6 +12,5 @@ int main() {
     // it is used for intermediate values
     // it is speedy to get form cpu register
     // then the RAM memory module
-    
 }
-// Register -> Cache Memory -> Maim Memory (RAM) -> Secondary memory (HDDs and SSDs)
+// Register -> Cache Memory -> Main Memory (RAM) -> Secondary memory (HDDs and SSDs)
