@@ -1,5 +1,6 @@
 #include <stdio.h>
 
-int mian() {
-    
+int main() {
+    const int a;
+    scanf("%d", &a);
 }
