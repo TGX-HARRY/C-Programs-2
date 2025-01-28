@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// diamond pattern
 int main() {
     int n;
     printf("Enter a number : ");
