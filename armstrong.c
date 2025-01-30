@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 // function to get ni raised to pwer n2
 // made this to prevent error of pow function in math.h
 int power(int n1, int n2) {
