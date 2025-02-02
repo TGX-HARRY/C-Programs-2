@@ -42,13 +42,13 @@ int main() {
     }
 
     // calculation and output of roots
-    int D;
+    register int D;
     float root1, root2;
     if (cx<0) {cx *= -1;}
     D = pow(cx, 2) - (4*cx2*cons);
     // printf("\n%d", D);
     if (D>0) {
-        root1 =  (sqrt(D) - cx)/(2*cx2);
+        root1 =(sqrt(D) - cx)/(2*cx2);
         root2 =(-1)*((sqrt(D) + cx)/(2*cx2));
         printf("Roots are %.2f, %.2f", root1, root2);
     }
