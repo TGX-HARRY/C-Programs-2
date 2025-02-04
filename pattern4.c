@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// cross
 int main() {
     
     int n;

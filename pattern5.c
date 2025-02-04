@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// pyramid of numbers
 int main() {
     int n;
     printf("Enter a number : ");

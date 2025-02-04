@@ -2,7 +2,7 @@
 #include <math.h>
 
 // number reversing can done in 2 different ways
-// one way using array where we get result but on in integer form
+// one way using array where we get result but not in integer form
 // other way using math.h power function as follows
 int main() {
     int count = 0, n, rev_num;
