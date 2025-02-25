@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int a=15, b=5, c=100;
+    int a,b,c;
+    printf("Enter any 3 numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
     if (a>b) {
         if (a>c)
         printf("Greatest number : %d",a);
