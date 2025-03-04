@@ -1,17 +1,5 @@
 #include <stdio.h>
-// // assuming array is {1,2,3,4,3,5,6,4}
-// int frequency(int array[], int size) {
-//     int r,c, count[size][size];
-//     for(r=0;r<size;r++) {
-//         for(c=0;c<size;c++) {
-//             if (array[r]==count[c][0])
-//             count[c][1] += 1;
-//         }
-//         if(!count[c][0])
-//         count[c][0]=array[c], count[c][1]=1;
-//     }
-//     return count[r][2];
-// }
+
 int main() {
     // declare and get value of size/lenght of array
     int size;
