@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int reverse_number(int n, int result) {
     if (n!=0) result = result * 10 + (n%10);
     else return result;

@@ -1,42 +1,43 @@
 #include <stdio.h>
 
+int isInArray(int target, int arr[10][2]) {
+    int i;
+    for(i=0;i<10;i++) {
+        if (target==arr[i][0]) 
+            return i;
+    }
+    return -1;
+}
+
 int main() {
-    // declare and get value of size/lenght of array
     int size;
     printf("Enter the size of array: ");
         scanf("%d", &size);
 
-    // declare and define array through user input
     int array[size], index;
     for(index=0;index<size;index++) 
         scanf("%d", &array[index]);
     
-    // turn every value of 2d array to 0
-    int r,c, count[size][2];
-    for(r=0;r<size;r++) {
-        for(c=0;c<2;c++) {
-            count[r][c]=0;
-        }
+    int ind=0,r,c, count[10][2];
+    for(r=0;r<10;r++) {
+        for(c=0;c<2;c++) count[r][c]=0;
     }
     
     for(r=0;r<size;r++) {
-        // this inner loop will check it tht element is already having an counter
-        // if it haves then it will add 1 to it
-        for(c=0;c<size;c++) {
-            if (array[r]==count[c][0])
+            int index= isInArray(array[r], count);
+            if (index==(-1)) 
             {
-                count[c][1] += 1;
-                break;
+                count[ind][0]+=array[r];
+                count[ind][1]=1;
+                ind++;
             }
-        }
-        //but if the value is not there and is zero
-        //then this will create a counter for the element
-        if(!count[r][0])
-            count[r][0]=array[r], count[r][1]=1;
+            else count[index][1] += 1;
     }
-
-    // display count of every element in user-input array
-    for(c=0;c<size;c++) {
-            printf("%d %d\n", count[c][0], count[c][1]);
+    int max = count[0][1], maxInd;
+    for(r=0;r<10;r++) {
+        if(max<count[r][1])
+            {max=count[r][1];
+            maxInd=r;}
     }
+    printf("%d", count[maxInd][0]);
 }
